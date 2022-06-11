@@ -6,9 +6,8 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        s=len(nums)
-        for i in range (0,s):
-            for j in range((i+1),s):
+        for i in range (0,len(nums)):
+            for j in range((i+1),len(nums)):
                 sum=nums[i]+nums[j]
                 if(sum==target):
                     l=[i,j]
