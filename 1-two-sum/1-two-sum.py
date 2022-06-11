@@ -10,8 +10,8 @@ class Solution(object):
             for j in range((i+1),len(nums)):
                 sum=nums[i]+nums[j]
                 if(sum==target):
-                    l=[i,j]
-                    break;
+                    return([i,j]);
+                    
 
-        return(l);
+       
 
