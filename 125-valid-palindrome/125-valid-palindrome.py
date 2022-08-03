@@ -2,5 +2,15 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         
         
-        s2 = ''.join(list(filter(lambda x: x.isalnum(), s))).lower()
-        return s2 == s2[::-1]
+        s1=""
+        for i in range(len(s)):
+            if s[i].isalnum()==True:
+                s1+=s[i]
+        s1=s1.lower()
+        s=s1[::-1]
+        if s1==s:
+            return True
+        else:
+            return False
+            
+                
