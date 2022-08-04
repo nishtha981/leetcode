@@ -1,7 +1,5 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
        
-        if needle in haystack:
-            return haystack.index(needle)
-        else: 
-            return -1
+        x= lambda a, b: a.index(b) if(b in a) else -1
+        return(x(haystack,needle))
