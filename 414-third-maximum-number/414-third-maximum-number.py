@@ -3,7 +3,7 @@ class Solution:
         
        
         nums=set(nums)
-        nums=(sorted(nums, reverse=True))
+        nums=sorted(nums, reverse=True)
         if(len(nums)>=3):
             return(nums[2])
         else:
